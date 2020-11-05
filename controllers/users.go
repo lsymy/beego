@@ -12,6 +12,8 @@ type UserController struct {
 func (u *UserController) Login()  {
 	lr := new(models.LoginRequest)
 
+	u.ParseForm(lr)
+
 	loginResponse, statusCode, err := models.Login(lr)
 	if err != nil {
 		u.respond(statusCode, err.Error())
