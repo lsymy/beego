@@ -1,1 +1,0 @@
-/Users/lsymy/go/src/bgo/views/users/show.tpl
